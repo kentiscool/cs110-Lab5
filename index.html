@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 - Meme Generator</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="content-wrapper">
+    <header>
+      <h1>Lab 5 - Meme Generator</h1>
+    </header>
+
+    <main>
+      <div id="image-wrapper">
+        <canvas id="user-image" alt="Select Image" height="400" width="400">
+      </div>
+      <form id="generate-meme">
+        <input type="file" name="image" id="image-input" accept="image/*"><br>
+        <input type="text" name="textTop" id="text-top" placeholder="Top Text"><br>
+        <input type="text" name="textBottom" id="text-bottom" placeholder="Bottom Text"><br>
+        <button type="submit">Generate</button>
+        <div id="button-group">
+          <button type="reset" disabled>Clear</button>
+          <button type="button" disabled>Read Text</button>
+        </div>
+        <select name="voices" id="voice-selection" disabled>
+          <option value="none" selected>No available voice options.</option>
+        </select>
+        <div id="volume-group">
+          <img src="icons/volume-level-3.svg" alt="Volume Level 3">
+          <input type="range" min=0 max=100 value=100>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <!-- Main Script -->
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

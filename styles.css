@@ -1,0 +1,87 @@
+/* styles.css */
+
+* {
+  font-family: sans-serif;
+}
+
+audio {
+  display: none;
+}
+
+body {
+  align-items: center;
+  display: grid;
+  height: 98vh;
+  justify-items: center;
+  width: 99vw;
+}
+
+button {
+  height: 25px;
+}
+
+h1 {
+  margin: 0;
+}
+
+input, button:first-of-type {
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  padding: 5px 2px 4px 5px;
+}
+
+main {
+  align-self: flex-start;
+  display: grid;
+}
+
+main canvas {
+  height: 100%;
+  width: 100%;
+}
+
+#button-group {
+  display: grid;
+  grid-template-areas: 'clear read';
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+#content-wrapper {
+  align-items: center;
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 13% 87%;
+  height: 750px;
+  justify-items: center;
+  width: 500px;
+}
+
+#content-wrapper > * {
+  margin: 0;
+}
+
+#generate-meme,
+#generate-meme * {
+  width: 100%;
+}
+
+#image-wrapper {
+  align-items: center;
+  display: grid;
+  height: 400px;
+  justify-items: center;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+#volume-group {
+  display: flex;
+}
+
+#volume-group img {
+  width: 35px;
+}
